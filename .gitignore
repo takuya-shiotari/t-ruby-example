@@ -1,0 +1,13 @@
+*.rbc
+*.swp
+*~
+.DS_Store
+.idea
+/log
+/tmp
+
+.env
+.env.production
+
+/.bundle
+/vendor/bundle
