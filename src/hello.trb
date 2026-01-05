@@ -1,5 +1,25 @@
-def greet({ name: String)
-  puts "Hello, #{name} from t-ruby!"
-end
+class BlogPost
+  def initialize(title: String, content: String, published: Boolean = false)
+    @title: String = title
+    @content: String = content
+    @published: Boolean = published
+    @views: Integer = 0
+    @tags: Array<String> = []
+  end
 
-greet(name: "Alice")
+  def publish(): void
+    @published = true
+  end
+
+  def add_view(): void
+    @views += 1
+  end
+
+  def add_tag(tag: String): void
+    @tags.push(tag)
+  end
+
+  def tag_list(): Array<String>
+    @tags
+  end
+end
