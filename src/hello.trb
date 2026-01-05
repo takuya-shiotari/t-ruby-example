@@ -1,0 +1,5 @@
+def greet({ name: String)
+  puts "Hello, #{name} from t-ruby!"
+end
+
+greet(name: "Alice")
