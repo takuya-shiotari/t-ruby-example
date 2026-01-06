@@ -11,7 +11,7 @@ source:
 
 output:
   ruby_dir: build
-  # rbs_dir: sig  # Optional: separate directory for .rbs files
+  rbs_dir: sig  # Optional: separate directory for .rbs files
   # clean_before_build: false
 
 compiler:

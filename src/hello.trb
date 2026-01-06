@@ -1,25 +1,19 @@
-class BlogPost
-  def initialize(title: String, content: String, published: Boolean = false)
-    @title: String = title
-    @content: String = content
-    @published: Boolean = published
-    @views: Integer = 0
-    @tags: Array<String> = []
+class User
+  def initialize(id: Integer, name: String, email: String): void
+    @id = id
+    @name = name
+    @email = email
   end
 
-  def publish(): void
-    @published = true
+  def greet: String
+    "Hello, I'm #{@name}!"
   end
 
-  def add_view(): void
-    @views += 1
-  end
-
-  def add_tag(tag: String): void
-    @tags.push(tag)
-  end
-
-  def tag_list(): Array<String>
-    @tags
+  def update_email(new_email: String): void
+    @email = new_email
   end
 end
+
+user = User.new
+str = user.greet
+str.flat_map

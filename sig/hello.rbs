@@ -1,0 +1,9 @@
+class User
+  @id: Integer
+  @name: String
+  @email: String
+
+  def initialize: (id: Integer, name: String, email: String) -> void
+  def greet: () -> String
+  def update_email: (new_email: String) -> void
+end
